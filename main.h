@@ -1,15 +1,16 @@
-#ifndef MAIN_H 
-#define MAIN_H 
+#ifndef MAIN_H
+#define MAIN_H
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdlib.h>
 
 /**
  * struct intface - interface for printing
- * @id: the character, which identifies the type of
- * the argument
+ * @id: the character, which identifies argument type
  * @fn: function to run if id matches
+ *
  */
+
 typedef struct intface
 {
 	char id;
