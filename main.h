@@ -11,7 +11,7 @@
  *
  */
 
-typedef struct intface
+typedef struct interface
 {
 	char id;
 	int (*fn)(va_list);
