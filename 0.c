@@ -15,6 +15,8 @@ int _printf(const char *format, ...)
 	char *y;
 	va_list ptr;
 
+	while (format[len])
+		len++;
 	va_start(ptr, format);
 
 	for (i = 0; format[i]; i++)
