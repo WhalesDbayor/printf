@@ -46,9 +46,9 @@ int main(void)
 	code = _printf("Our: %%.\n");
 	printf("Our Returns: %d\n", code);
 
-	code = printf("Std: Cu%cio.us\n", '7');
+	code = printf("Std: cR%c\n", '7');
 	printf("Std Returns: %d\n", code);
-	code = _printf("Our: Cu%cio.us\n", '7');
+	code = _printf("Our: cR%c\n", '7');
 	printf("Our Returns: %d\n", code);
 
 	return (0);
