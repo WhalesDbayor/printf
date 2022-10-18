@@ -23,13 +23,13 @@ int _printf(const char *format, ...)
 			i++;
 			for (; format[i] != '\0'; i++)
 			{
-				for (j = 0; ids[j].id != '\0'; j++)
-					if (format[i] == ids[j].id)
+				for (j = 0; id[j].id != '\0'; j++)
+					if (format[i] == id[j].id)
 					{
-						count += ids[j].fn(lst);
+						count += id[j].fn(lst);
 						break;
 					}
-				if (ids[j].id)
+				if (id[j].id)
 					break;
 			}
 			if (format[i] == '\0')
